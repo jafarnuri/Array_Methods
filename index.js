@@ -1,40 +1,96 @@
-// let fillter = [15, -5, 7, -99, -2, 15, 55];
-// let filters = [];
-// function Showfilter() {
-//   for (let i = 0; i <= fillter.length; i++) {
-//     if (fillter[i] > 10 && fillter[i] < 50) {
-//       filters.push(fillter[i]);
+//filter method
+
+// function Filter(myarr) {
+//   let newarr = [];
+//   for (let i = 0; i < myarr.length; i++) {
+//     if (myarr[i] > 10) {
+//       newarr.push(myarr[i]);
 //     }
 //   }
-
-//   console.log(filters);
+//   return newarr;
 // }
-// Showfilter();
 
-// let every = [20, 40, 33, 60, 25];
-// let num = +prompt("bir eded girin...");
-// function Showevery(num) {
-//   for (let i = 0; i <= every.length; i++) {
-//     if (num > every[i]) {
-//       console.log(false);
-//     } else {
-//       console.log(true);
+// let filter = [15, -5, 7, -99, -2, 15, 55];
+// console.log(Filter(filter));
+
+//every method
+
+// function Every(myarr) {
+//   for (let i = 0; i < myarr.length; i++) {
+//     if (myarr[i] % 2 !== 0) {
+//       return false;
 //     }
 //   }
-//   console.log(every);
+//   return true;
 // }
-// Showevery(num);
 
-// let some = [20, 40, 33, 60, 25];
-// let num = +prompt("bir eded girin...");
-// function Showsome(num) {
-//   for (let i = 0; i <= some.length; i++) {
-//     if (some[i] % num === 0) {
-//       console.log(true);
-//     } else {
-//       console.log(false);
+// let every = [2, 4, 8, 8];
+// console.log(Every(every));
+
+//some methode
+
+// function Some(myarr) {
+//   for (let i = 0; i < myarr.length; i++) {
+//     if (myarr[i] % 2 === 0) {
+//       return true;
 //     }
 //   }
-//   console.log(some);
+//   return false;
 // }
-// Showsome(num);
+
+// let some = [1, 7, 3, 5];
+// console.log(Some(some));
+
+//reduce method
+
+// function Reduce(myarr) {
+//   let cem = 0;
+//   for (let i = 0; i < myarr.length; i++) {
+//     cem += myarr[i];
+//   }
+//   return cem;
+// }
+// let reduce = [3, 7, 4, 9, 7];
+// console.log(Reduce(reduce));
+
+//find method
+
+// function Find(myarr) {
+//   for (let i = 0; i < myarr.length; i++) {
+//     if (myarr[i] % 2 === 0) {
+//       console.log(myarr[i]);
+//       break;
+//     }
+//   }
+// }
+
+// let find = [1, 3, 8, 5];
+// console.log(Find(find));
+
+//includes  method
+
+// function Includes(myarr, num) {
+//   for (let i = 0; i < myarr.length; i++) {
+//     if (myarr[i] == num) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// let includ = [3, 7, 4, 9, 1];
+// console.log(Includes(includ, 1));
+
+//Sort methods
+
+// function Sort(myarr) {
+//   for (let i = 0; i < myarr.length; i++) {
+//     for (let j = 0; j < myarr.length - i; j++) {
+//       if (myarr[j] > myarr[j + 1]) {
+//         [myarr[j], myarr[j + 1]] = [myarr[j + 1], myarr[j]];
+//       }
+//     }
+//   }
+//   return myarr;
+// }
+// let newarr = [6, 1, 9, 5, 22, 1, 4, 8, 2];
+// console.log(Sort(newarr));
